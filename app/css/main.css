@@ -426,10 +426,21 @@ body {
 }
 .lang {
   position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   top: 3rem;
   right: 3rem;
   z-index: 100;
 }
-.lang li {
-  display: inline;
+.lang img {
+  padding: 1rem;
+  cursor: pointer;
+  max-height: 5rem;
+  height: auto;
+  width: auto;
+}
+.fadeout {
+  display: none;
 }

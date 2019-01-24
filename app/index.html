@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
 </head>
@@ -20,10 +21,14 @@
     
         <!-- Меню -->
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="eng" style="border-top: 1px solid #c2c2c2; margin-top: 20px;"><a href="#top">Home</a></li>
+            <li class="rus fadeout" style="border-top: 1px solid #c2c2c2; margin-top: 20px;"><a href="#top">Наверх</a></li>
+            <li class="eng"><a href="#edu">Education</a></li>
+            <li class="rus fadeout"><a href="#edu">Образование</a></li>
+            <li class="eng"><a href="#portfolio">Portfolio</a></li>
+            <li class="rus fadeout"><a href="#portfolio">Портфолио</a></li>
+            <li class="eng"><a href="#interests">Interests</a></li>
+            <li class="rus fadeout"><a href="#interests">Дополнительно</a></li>
         </ul>
     </div>
 
@@ -34,6 +39,7 @@
     <div class="icon-menu">
         <img src="../img/menu.png">
     </div>
+    <div id="top"></div>
     <div class="first_part">
 
     </div>
@@ -65,8 +71,8 @@
                         </div>
                         <div class="info_string">
                             <img class="info_logo" src="../img/pin.png">
-                            <p class="small rus fadeout">ул. Цветаевой 9а, Киев, Украина</p>
-                            <p class="small eng">Tsvetaevoy str. 9a, Kyiv, Ukraine</p>
+                            <p class="small rus fadeout">Киев, Украина</p>
+                            <p class="small eng">Kyiv, Ukraine</p>
                         </div>
                     </div>
                     <div class="bottom">
@@ -74,16 +80,17 @@
                     </div>
                     <div class="wrapper">
                         <ul>
-                          <li class="facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
-                          <li class="twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
-                          <li class="instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
-                          <li class="google"><i class="fa fa-google fa-2x" aria-hidden="true"></i></li>
-                          <li class="whatsapp"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></li>
+                          <!-- <a href="https://www.facebook.com/profile.php?id=100005145097633"><li class="facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li></a> -->
+                          <a href="https://www.linkedin.com/in/александр-плагун-a021a7170/"><li class="linkedin"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></li></a>
+                          <a href="https://www.instagram.com/alexandr_plagun/"><li class="instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li></a>
+                          <!-- <a href="https://plus.google.com/u/0/107106009692079422360"><li class="google"><i class="fa fa-google fa-2x" aria-hidden="true"></i></li></a> -->
+                          <a href="https://t.me/AlexPlg"><li class="telegram"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i></li></a>
+                          <!-- <li class="whatsapp"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></li> -->
                         </ul>
                     </div>
                 </div>
                 <div class="myphoto">
-                    <img src="../img/profile_photo.jpg" class="round">
+                    <div class="img_container"><img src="../img/profile_photo.jpg" class="round"></div>
                 </div>
             </div>
         </div>
@@ -103,7 +110,7 @@
                 </div>
             </div>
         </div>
-        <div class="education">
+        <div class="education" id="edu">
             <div class="title">
                 <div class="title_pic">
                     <img src="../img/graduate.png">
@@ -116,21 +123,21 @@
             <div class="container">
                 <div class="kpi">
                     <div class="left_side">
-                        <img src="../img/kpi.png">
+                        <div class="img_container"><img src="../img/kpi.png"></div>
                         <p class="small rus fadeout">НТУУ "КПИ им. Игоря Сикорского"</p>
                         <p class="small eng">NTUU "Igor Sikorsky KPI"</p>
                         <p class="small rus fadeout">ФИВТ 2015-...</p>
                         <p class="small eng">FICT 2015-...</p>
                     </div>
                     <div class="right_side">
-                        <img src="../img/diploma_replace.jpeg">
+                        <div class="img_container"><img src="../img/diploma.jpg"></div>
                         <p class="small rus fadeout">Main Academy Front-end курс 2018</p>
                         <p class="small eng">Main Academy Front-end course 2018</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio">
             <div class="title">
                 <div class="title_pic">
                     <img src="../img/portfolio.png">
@@ -154,7 +161,7 @@
                 <div class="space"></div> -->
             </div>
         </div>
-        <div class="interests">
+        <div class="interests" id="interests">
             <div class="title">
                 <div class="title_pic">
                     <img src="../img/like.png">
@@ -231,5 +238,17 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="flex">
+            <div class="info_string">
+                <img class="info_logo" src="../img/email.png">
+                <p class="small">plagun98@gmail.com</p>
+            </div>
+            <div class="info_string">
+                <img class="info_logo" src="../img/phone.png">
+                <p class="small">+38 093 223 36 35</p>
+            </div>
+        </div>
+    </footer>
 </body> 
 </html>

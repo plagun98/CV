@@ -20,7 +20,20 @@ var main = function() {
         $('.eng').toggleClass('fadeout');
         $('.rus').toggleClass('fadeout');
     });
+
+    if(window.innerWidth <= 500){
+        $('.myphoto').prependTo('.main_info');
+        $('.main_info').css("display",'block');
+    }
+    window.onresize = ()=>{
+        if(window.innerWidth <= 500){
+            $('.myphoto').prependTo('.main_info');
+            $('.main_info').css("display",'block');
+        } else {
+            $('.myphoto').appendTo('.main_info');
+            $('.main_info').css("display",'flex');
+        }
+    }
 };
  
-$(document).ready(main); /* как только страница полностью загрузится, будет
-               вызвана функция main, отвечающая за работу меню */
+$(document).ready(main);

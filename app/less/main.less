@@ -287,6 +287,18 @@ body {
     transition: all 0.5s ease;
   }
 
+  .wrapper ul li:hover.github {
+    border: 5px solid #6cc644;
+    box-shadow: 0 0 15px #6cc644;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-github {
+    color: #6cc644;
+    text-shadow: 0 0 15px #6cc644;
+    transition: all 0.5s ease;
+  }
+
 .info_string{
     display: flex;
     padding-bottom: 1rem;
@@ -391,7 +403,10 @@ body {
         padding-top: 30px;
         height: 0;
         overflow: hidden;
-        border: 1px solid #ccc;
+        //border: 1px solid #ccc;
+        img{
+            width: 100%;
+        }
     }
     iframe{
         position: absolute;
@@ -521,6 +536,16 @@ footer{
     }
     .myphoto{
         padding-right: 0;
+    }
+    .flex{
+        display: block;
+    }
+    footer{
+        .info_string{
+            padding: 5px 0;
+            margin: 0 auto;
+            justify-content: center;
+        }
     }
 }
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");

@@ -263,6 +263,21 @@ body {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+.wrapper ul li:hover.github {
+  border: 5px solid #6cc644;
+  -webkit-box-shadow: 0 0 15px #6cc644;
+          box-shadow: 0 0 15px #6cc644;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-github {
+  color: #6cc644;
+  text-shadow: 0 0 15px #6cc644;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
 .info_string {
   display: -webkit-box;
   display: -webkit-flex;
@@ -391,7 +406,9 @@ body {
   padding-top: 30px;
   height: 0;
   overflow: hidden;
-  border: 1px solid #ccc;
+}
+.portfolio .project img {
+  width: 100%;
 }
 .portfolio iframe {
   position: absolute;
@@ -523,5 +540,16 @@ footer .info_string {
   }
   .myphoto {
     padding-right: 0;
+  }
+  .flex {
+    display: block;
+  }
+  footer .info_string {
+    padding: 5px 0;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

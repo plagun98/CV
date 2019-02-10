@@ -32,7 +32,7 @@
         </ul>
     </div>
 
-    <div class="lang">
+    <div class="lang" title="language shift">
         <img class="choose" src="../img/ruseng.png">
     </div>
         
@@ -86,6 +86,7 @@
                           <!-- <a href="https://plus.google.com/u/0/107106009692079422360"><li class="google"><i class="fa fa-google fa-2x" aria-hidden="true"></i></li></a> -->
                           <a href="https://t.me/AlexPlg"><li class="telegram"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i></li></a>
                           <!-- <li class="whatsapp"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></li> -->
+                          <a href="https://github.com/plagun98"><li class="github"><i class="fa fa-github fa-2x" aria-hidden="true"></i></li></a>
                         </ul>
                     </div>
                 </div>
@@ -96,17 +97,29 @@
         </div>
         <div class="container">        
             <div class="more_info">
-                <p class="more_info_about_me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus tempora quos, facilis maxime minus porro non accusantium placeat quo exercitationem, ab officiis natus suscipit labore libero ipsum commodi totam repellat?</p>
+                <p class="more_info_about_me rus fadeout">Здравствуйте! Я junior front-end разработчик из Киева. Интересует полная/неполная занятость.<br>
+                    Профессиональные навыки: крепкие знания HTML5/CSS3, базовые знания Javascript, jQuery, Ajax, интеграция плагинов, кроссбраузерная, адаптивная верстка. В разработке сайтов использую Gulp, less, git, Zeplin.
+                    Знания языков: английский - средний, немецкий - начинающий.
+                </p>
+                <p class="more_info_about_me eng">Hello! I am junior front-end developer in Kyiv and I am interested to get full or part time job.<br>
+                    My professional skills: strong knowledge of HTML5/CSS3, basic knowledge of Javascript, jQuery, Ajax, plugin integration, crossbrowser and responsive coding. For website development I use Gulp, less, git, Zeplin.
+                    Knowledge of foreign languages: English - intermediate, German - beginner.
+                </p>
                 <hr>
                 <div class="buttons">
-                    <div class="button2">
-                        <p class="rus fadeout">скачать резюме</p>
-                        <p class="eng">download cv</p>
-                    </div>
-                    <div class="button2">
-                        <p class="rus fadeout">связь со мной</p>
-                        <p class="eng">contact me</p>
-                    </div>
+                    <a href="../img/Alexandr_Plagun_resume.pdf">
+                        <div class="button2">
+                            <p class="rus fadeout">скачать резюме</p>
+                            <p class="eng">download cv</p>
+                        </div>
+                    </a>
+                    <a href="#top">
+                        <div class="button2">
+                            <p class="rus fadeout">связь со мной</p>
+                            <p class="eng">contact me</p>
+                        </div> 
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -148,17 +161,24 @@
                 </div>
             </div>
             <div class="container">
-                <h1 class="rus fadeout">Проект 1</h1>
-                <h1 class="eng">Project 1</h1>
+                <h1 title="move to full version"><a href="http://portfolio-project1.kl.com.ua">portfolio-project1.kl.com.ua</a></h1>
                 <div class="project">
-                    <iframe src="http://about-me.kl.com.ua">Don't support iframes</iframe>
+                    <!-- <iframe src="http://portfolio-project1.kl.com.ua">Don't support iframes</iframe> -->
+                    <img src="../img/portfolio1.jpg" alt="">
                 </div>
                 <div class="space"></div>
-                <!-- <h1>Project 2</h1>
+                <h1 title="move to full version"><a href="http://portfolio-project2.kl.com.ua">portfolio-project2.kl.com.ua</a></h1>
                 <div class="project">
-                    <iframe src="http://portfolio-project1.kl.com.ua">Don't support iframes</iframe>
+                    <!-- <iframe src="http://aquaplanner.com.ua">Don't support iframes</iframe> -->
+                    <img src="../img/portfolio2.jpg" alt="">
                 </div>
-                <div class="space"></div> -->
+                <div class="space"></div>
+                <h1 title="move to full version"><a href="http://aquaplanner.com.ua">aquaplanner.com.ua</a></h1>
+                <div class="project">
+                    <!-- <iframe src="http://aquaplanner.com.ua">Don't support iframes</iframe> -->
+                    <img src="../img/aquaplanner.jpg" alt="">
+                </div>
+                <div class="space"></div>
             </div>
         </div>
         <div class="interests" id="interests">
@@ -175,7 +195,8 @@
             <div class="container">
                 <div class="interests_table">
                     <div class="interests_text">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, repellendus quidem maiores perferendis illum exercitationem doloribus, saepe dolorem nam facere quis velit. Necessitatibus voluptatibus, culpa tenetur ex officia iste ipsum?</p>
+                        <p class="rus fadeout">Я люблю спорт, особенно футбол. Поэтому с уверенностью могу скать что я открытый, коммуникабельный человек и командный игрок. Также из личных качеств могу выделить логическое и аналитическое мышление, стремление к развитию. Чтоб узнать меня лучше, ниже вы можете увидеть часть моих хобби.</p>
+                        <p class="eng">I love sport, especially football. So I can safely say that I am open-minded, communicative man and a team player. Also I can add that i am really motivated to improve my programming skills. To know me better, below you can see some of my interests.</p>
                     </div>
                     <div class="interests_list">
                         <div class="interests_list_item colored">
@@ -238,6 +259,26 @@
             </div>
         </div>
     </div>
+    <section class="contact__me">
+        <div class="container">
+            <form action="send.php" method="POST">
+                <legend>CONTACT FORM</legend>
+                <div class="form-group">
+                    <label for="">Enter name</label>
+                    <input type="text" class="form-control" name="user__name" placeholder="Enter FIO">
+                </div>
+                <div class="form-group">
+                    <label for="">Enter name</label>
+                    <input type="text" class="form-control" name="user__theme" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label for="">Enter name</label>
+                    <input type="text" class="form-control" name="user__email" placeholder="mail@mail.com">
+                </div>
+                <button type="submit">Send form</button>
+            </form>
+        </div>
+    </section>
     <footer>
         <div class="flex">
             <div class="info_string">
